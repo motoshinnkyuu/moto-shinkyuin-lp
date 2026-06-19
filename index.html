@@ -18,36 +18,23 @@
     h2{text-align:center;font-size:24px;font-weight:500;margin:0 0 22px}
     h3{font-size:22px;font-weight:500;margin:0 0 14px}
     .orange{color:#e97823;font-weight:bold}
-    .btns{
-  display:flex;
+   .btns{
+  display:grid;
+  grid-template-columns:1fr;
   gap:10px;
   margin:22px 0;
 }
 
 .btn{
-  flex:1;
-  min-width:0;
+  width:100%;
   text-align:center;
   color:white;
   text-decoration:none;
   border-radius:999px;
-  padding:12px 8px;
+  padding:14px 12px;
   font-weight:bold;
-  font-size:13px;
-  line-height:1.35;
-  white-space:normal;
-  word-break:keep-all;
-}
-
-@media (max-width:380px){
-  .btns{
-    flex-direction:column;
-  }
-
-  .btn{
-    width:100%;
-    font-size:14px;
-  }
+  font-size:15px;
+  line-height:1.4;
 }
     .line{background:#39b54a}.tel{background:#ef7f22}
     .small{display:block;font-size:10px;font-weight:normal}
@@ -88,9 +75,7 @@
     <h1>ご自宅・施設で<br>受けられる<br><span class="orange">訪問鍼灸マッサージ</span></h1>
 
     <p>国家資格を持つ施術者が<br>お一人おひとりの状態に合わせて<br>健やかな毎日をサポートします。</p>
-
-    <div class="btns">
-      <div class="box" style="margin-top:18px;text-align:center;">
+<div class="box" style="margin-top:18px;text-align:center;">
   <h3 style="margin-bottom:8px;">無料体験受付中</h3>
   <p style="margin:0;">
     まずはお気軽にご相談ください。<br>
@@ -98,9 +83,18 @@
     丁寧にご説明いたします。
   </p>
 </div>
-      <a class="btn line" href="https://lin.ee/zH2nhoz">LINEで相談する<span class="small">lin.ee/zH2nhoz</span></a>
-      <a class="btn tel" href="tel:09033920161">090-3392-0161<span class="small">受付時間 9:00〜18:00</span></a>
-    </div>
+
+<div class="btns">
+  <a class="btn line" href="https://lin.ee/zH2nhoz">
+    LINEで相談する
+    <span class="small">lin.ee/zH2nhoz</span>
+  </a>
+
+  <a class="btn tel" href="tel:09033920161">
+    090-3392-0161
+    <span class="small">受付時間 9:00〜18:00</span>
+  </a>
+</div>
 
     <div class="hero-img"><img src="main.jpg" alt="もと鍼灸院スタッフ"></div>
   </section>
