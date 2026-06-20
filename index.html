@@ -18,24 +18,8 @@
     h2{text-align:center;font-size:24px;font-weight:500;margin:0 0 22px}
     h3{font-size:22px;font-weight:500;margin:0 0 14px}
     .orange{color:#e97823;font-weight:bold}
-   .btns{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:10px;
-  margin:22px 0;
-}
-
-.btn{
-  width:100%;
-  text-align:center;
-  color:white;
-  text-decoration:none;
-  border-radius:999px;
-  padding:14px 12px;
-  font-weight:bold;
-  font-size:15px;
-  line-height:1.4;
-}
+    .btns{display:grid;grid-template-columns:1fr;gap:10px;margin:22px 0}
+    .btn{width:100%;text-align:center;color:white;text-decoration:none;border-radius:999px;padding:14px 12px;font-weight:bold;font-size:15px;line-height:1.4}
     .line{background:#39b54a}.tel{background:#ef7f22}
     .small{display:block;font-size:10px;font-weight:normal}
     .hero-img,.photo,.staff-img{border-radius:20px;overflow:hidden}
@@ -44,9 +28,12 @@
     .icon{font-size:28px}
     .box{background:white;border-radius:22px;padding:24px;box-shadow:0 8px 24px #d7a16a22;margin-bottom:20px}
     .insurance{border:1px solid #ef7f22;border-radius:12px;text-align:center;padding:12px;margin-top:18px;font-weight:bold}
+    .price-table{width:100%;border-collapse:collapse;background:white;margin-top:12px;font-size:14px}
+    .price-table th,.price-table td{border:1px solid #f0d5bf;padding:10px;text-align:center}
+    .price-table th{background:#fff2e5;color:#3b2a22}
     .flow-item{display:flex;gap:14px;margin-bottom:16px}
     .num{background:#ef9b4a;color:white;width:34px;height:34px;border-radius:50%;text-align:center;line-height:34px;font-weight:bold;flex-shrink:0}
-    .check p{margin:8px 0}.check span{color:#ef7f22;font-weight:bold}
+    .check p,.faq p{margin:8px 0}.check span{color:#ef7f22;font-weight:bold}
     .area{background:#fff7ee;border-radius:22px;padding:24px}
     .map{margin-top:16px;border:1px solid #efc19d;border-radius:18px;padding:28px;text-align:center;color:#d26b1f;background:#fff}
     .circle{width:170px;height:170px;border:1px solid #ef9b4a;border-radius:50%;margin:auto;display:flex;align-items:center;justify-content:center;flex-direction:column}
@@ -58,159 +45,206 @@
     footer{text-align:center;padding:18px;font-size:12px;color:#8a6a55}
   </style>
 </head>
+
 <body>
 <main class="page">
 
-  <section class="hero"><div style="margin-top:16px;padding:12px;border:1px solid #efc19d;border-radius:14px;background:#fff;">
-  <strong>お問い合わせ</strong><br>
-  <a href="tel:09033920161" style="color:#e97823;text-decoration:none;font-size:20px;font-weight:bold;">
-    090-3392-0161
-  </a><br>
-  <span style="font-size:12px;">受付時間 9:00〜18:00</span>
-</div>
-    <div class="logo">もと鍼灸院</div>
-    <div class="sub">訪問鍼灸マッサージ</div>
+<section class="hero">
+  <div style="margin-top:16px;padding:12px;border:1px solid #efc19d;border-radius:14px;background:#fff;">
+    <strong>お問い合わせ</strong><br>
+    <a href="tel:09033920161" style="color:#e97823;text-decoration:none;font-size:20px;font-weight:bold;">090-3392-0161</a><br>
+    <span style="font-size:12px;">受付時間 9:00〜18:00</span>
+  </div>
 
-    <div class="lead">通院が難しい方へ</div>
-    <h1>ご自宅・施設で<br>受けられる<br><span class="orange">訪問鍼灸マッサージ</span></h1>
+  <div class="logo">もと鍼灸院</div>
+  <div class="sub">訪問鍼灸マッサージ</div>
 
-    <p>国家資格を持つ施術者が<br>お一人おひとりの状態に合わせて<br>健やかな毎日をサポートします。</p>
-<div class="box" style="margin-top:18px;text-align:center;">
-  <h3 style="margin-bottom:8px;">無料体験受付中</h3>
-  <p style="margin:0;">
-    まずはお気軽にご相談ください。<br>
-    お身体の状態やご利用までの流れを<br>
-    丁寧にご説明いたします。
-  </p>
-</div>
+  <div class="lead">通院が難しい方へ</div>
+  <h1>ご自宅・施設で<br>受けられる<br><span class="orange">訪問鍼灸マッサージ</span></h1>
 
-<div class="btns">
-  <a class="btn line" href="https://lin.ee/zH2nhoz">
-    LINEで相談する
-    <span class="small">lin.ee/zH2nhoz</span>
-  </a>
+  <p>国家資格を持つ施術者が<br>お一人おひとりの状態に合わせて<br>健やかな毎日をサポートします。</p>
 
-  <a class="btn tel" href="tel:09033920161">
-    090-3392-0161
-    <span class="small">受付時間 9:00〜18:00</span>
-  </a>
-</div>
+  <div class="box" style="text-align:center;">
+    <h3>無料体験受付中</h3>
+    <p>まずはお気軽にご相談ください。<br>お身体の状態やご利用までの流れを<br>丁寧にご説明いたします。</p>
+  </div>
 
-    <div class="hero-img"><img src="main.jpg" alt="もと鍼灸院スタッフ"></div>
-  </section>
+  <div class="btns">
+    <a class="btn line" href="https://lin.ee/zH2nhoz">LINEで相談する<span class="small">lin.ee/zH2nhoz</span></a>
+    <a class="btn tel" href="tel:09033920161">090-3392-0161<span class="small">受付時間 9:00〜18:00</span></a>
+  </div>
 
-  <section>
-    <h2>このようなお悩みは<br>ありませんか？</h2>
-    <div class="cards">
-      <div class="card"><div class="icon">🚶</div>歩行が不安</div>
-      <div class="card"><div class="icon">🛏️</div>寝たきりで<br>体が固い</div>
-      <div class="card"><div class="icon">🦵</div>関節が<br>動かしにくい</div>
-      <div class="card"><div class="icon">🧠</div>麻痺や<br>後遺症がある</div>
-      <div class="card"><div class="icon">💆</div>痛みやこりが<br>つらい</div>
-      <div class="card"><div class="icon">👪</div>家族の介護負担を<br>減らしたい</div>
-    </div>
-  </section>
+  <div class="hero-img"><img src="main.jpg" alt="もと鍼灸院スタッフ"></div>
+</section>
 
-  <section>
-    <div class="photo"><img src="treatment.jpg" alt="施術風景"></div>
-    <div class="box">
-      <h3>訪問鍼灸マッサージとは</h3>
-      <p>施術者がご自宅や施設へ訪問し、鍼灸・あん摩マッサージ指圧・関節可動域訓練などを行います。</p>
-      <p>お身体の状態に合わせて、<span class="orange">痛みの緩和・拘縮予防・身体機能の維持向上</span>をサポートします。</p>
-      <div class="insurance">医療保険適用でご利用いただけます<br>（※医師の同意書が必要です）</div>
-    </div>
-  </section>
+<section>
+  <h2>このようなお悩みは<br>ありませんか？</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">🚶</div>歩行が不安</div>
+    <div class="card"><div class="icon">🛏️</div>寝たきりで<br>体が固い</div>
+    <div class="card"><div class="icon">🦵</div>関節が<br>動かしにくい</div>
+    <div class="card"><div class="icon">🧠</div>麻痺や<br>後遺症がある</div>
+    <div class="card"><div class="icon">💆</div>痛みやこりが<br>つらい</div>
+    <div class="card"><div class="icon">👪</div>家族の介護負担を<br>減らしたい</div>
+  </div>
+</section>
 
-  <section>
-    <div class="box">
-      <h2>ご利用の流れ</h2>
-      <div class="flow-item"><div class="num">01</div><div><strong>お問い合わせ</strong><br>お電話またはLINEからご相談ください。</div></div>
-      <div class="flow-item"><div class="num">02</div><div><strong>無料体験・ご説明</strong><br>施術内容や制度についてご説明します。</div></div>
-      <div class="flow-item"><div class="num">03</div><div><strong>医師の同意書準備</strong><br>必要書類についてご案内します。</div></div>
-      <div class="flow-item"><div class="num">04</div><div><strong>施術開始</strong><br>状態に合わせた施術を開始します。</div></div>
-    </div>
+<section>
+  <div class="photo"><img src="treatment.jpg" alt="施術風景"></div>
+  <div class="box">
+    <h3>訪問鍼灸マッサージとは</h3>
+    <p>施術者がご自宅や施設へ訪問し、鍼灸・あん摩マッサージ指圧・関節可動域訓練などを行います。</p>
+    <p>お身体の状態に合わせて、<span class="orange">痛みの緩和・拘縮予防・身体機能の維持向上</span>をサポートします。</p>
+    <div class="insurance">医療保険適用でご利用いただけます<br>（※医師の同意書が必要です）</div>
+  </div>
+</section>
 
-    <div class="box check">
-      <h2>ご利用対象</h2>
-      <p><span>✓</span> 通院が困難な方</p>
-      <p><span>✓</span> 介護を受けている方</p>
-      <p><span>✓</span> 脳梗塞後遺症の方</p>
-      <p><span>✓</span> パーキンソン病の方</p>
-      <p><span>✓</span> 関節拘縮や麻痺がある方</p>
-      <p><span>✓</span> 施設に入居中の方</p>
-    </div>
-  </section>
+<section>
+  <div class="box">
+    <h2>ご利用料金の目安</h2>
+    <p>医療保険適用の場合、自己負担割合により料金が異なります。</p>
 
-  <section>
-    <div class="area">
-      <h3>訪問エリア</h3>
-      <p class="orange">靱本町から直径8km圏内</p>
-      <p>西区・中央区・福島区・北区・浪速区・西成区・港区・大正区・天王寺区（一部）・阿倍野区（一部）・住之江区（一部）・住吉区（一部）・東成区（一部）・城東区（一部）</p>
-      <p>※訪問可能かどうかはお気軽にご相談ください。</p>
-      <div class="map"><div class="circle"><strong>靱本町</strong><span>約8km圏内</span></div></div>
-      <a class="map-link" href="https://maps.app.goo.gl/z5pV5YYio2WcivVRA?g_st=ic">Googleマップで見る</a>
-    </div>
-  </section>
+    <table class="price-table">
+      <tr><th>負担割合</th><th>1回あたりの目安</th></tr>
+      <tr><td>1割負担</td><td>約300〜700円</td></tr>
+      <tr><td>2割負担</td><td>約600〜1,400円</td></tr>
+      <tr><td>3割負担</td><td>約900〜2,100円</td></tr>
+    </table>
+
+    <p style="font-size:13px;">※施術内容や訪問距離により異なります。<br>※医師の同意書が必要です。</p>
+  </div>
+</section>
+
+<section>
+  <div class="box check">
+    <h2>無料体験で<br>分かること</h2>
+    <p><span>✓</span> 保険が使えるか</p>
+    <p><span>✓</span> おおよその自己負担額</p>
+    <p><span>✓</span> お身体の状態</p>
+    <p><span>✓</span> 施術内容</p>
+    <p><span>✓</span> ご利用開始までの流れ</p>
+  </div>
+</section>
+
+<section>
+  <div class="box">
+    <h2>ご家族様へ</h2>
+    <p>「離れて暮らしていて様子が分からない」</p>
+    <p>「身体が固くなってきて心配」</p>
+    <p>そんなお悩みに寄り添います。</p>
+    <p>施術だけでなく、お身体の変化も共有しながらサポートいたします。</p>
+  </div>
+</section>
+
+<section>
+  <div class="box check">
+    <h2>もと鍼灸院が<br>選ばれる理由</h2>
+    <p><span>✓</span> 国家資格者が対応</p>
+    <p><span>✓</span> 女性施術者在籍</p>
+    <p><span>✓</span> ご自宅・施設どちらも対応</p>
+    <p><span>✓</span> 医療保険対応</p>
+    <p><span>✓</span> 無料体験あり</p>
+    <p><span>✓</span> ご家族様への報告も対応</p>
+    <p><span>✓</span> ケアマネジャー様との連携を重視</p>
+  </div>
+</section>
+
+<section>
+  <div class="box">
+    <h2>ご利用の流れ</h2>
+    <div class="flow-item"><div class="num">01</div><div><strong>お問い合わせ</strong><br>お電話またはLINEからご相談ください。</div></div>
+    <div class="flow-item"><div class="num">02</div><div><strong>無料体験・ご説明</strong><br>施術内容や制度についてご説明します。</div></div>
+    <div class="flow-item"><div class="num">03</div><div><strong>医師の同意書準備</strong><br>必要書類についてご案内します。</div></div>
+    <div class="flow-item"><div class="num">04</div><div><strong>施術開始</strong><br>状態に合わせた施術を開始します。</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="box check">
+    <h2>ご利用対象</h2>
+    <p><span>✓</span> 通院が困難な方</p>
+    <p><span>✓</span> 介護を受けている方</p>
+    <p><span>✓</span> 脳梗塞後遺症の方</p>
+    <p><span>✓</span> パーキンソン病の方</p>
+    <p><span>✓</span> 関節拘縮や麻痺がある方</p>
+    <p><span>✓</span> 施設に入居中の方</p>
+  </div>
+</section>
+
+<section>
+  <div class="area">
+    <h3>訪問エリア</h3>
+    <p class="orange">靱本町から直径8km圏内</p>
+    <p>西区・中央区・福島区・北区・浪速区・西成区・港区・大正区・天王寺区（一部）・阿倍野区（一部）・住之江区（一部）・住吉区（一部）・東成区（一部）・城東区（一部）</p>
+    <p>※訪問可能かどうかはお気軽にご相談ください。</p>
+    <div class="map"><div class="circle"><strong>靱本町</strong><span>約8km圏内</span></div></div>
+    <a class="map-link" href="https://maps.app.goo.gl/z5pV5YYio2WcivVRA?g_st=ic">Googleマップで見る</a>
+  </div>
+</section>
+
 <section>
   <div class="box">
     <h3>ケアマネジャー様へ</h3>
-    <p>
-      ご利用者様の状態変化や施術経過を、
-      必要に応じてご家族様・ケアマネジャー様へ共有いたします。
-    </p>
-    <p>
-      報告・連絡・相談を大切にし、
-      安心して連携していただける訪問施術を心がけています。
-    </p>
+    <p>ご利用者様の状態変化や施術経過を、必要に応じてご家族様・ケアマネジャー様へ共有いたします。</p>
+    <p>報告・連絡・相談を大切にし、安心して連携していただける訪問施術を心がけています。</p>
   </div>
 </section>
-  <section>
-    <div class="box">
-      <h3>人とのつながりを大切に</h3>
-      <p>私たちは施術だけではなく、ご利用者様・ご家族様・ケアマネジャー様・医療介護関係者様とのつながりを大切にしています。</p>
-      <p>「報告・連絡・相談（ホウレンソウ）」を気をつけ、小さな変化も共有できる関係づくりを心がけています。</p>
-    </div>
-  </section>
 
-  <section>
-    <h2>スタッフ紹介</h2>
+<section>
+  <div class="box">
+    <h3>人とのつながりを大切に</h3>
+    <p>私たちは施術だけではなく、ご利用者様・ご家族様・ケアマネジャー様・医療介護関係者様とのつながりを大切にしています。</p>
+    <p>「報告・連絡・相談（ホウレンソウ）」を気をつけ、小さな変化も共有できる関係づくりを心がけています。</p>
+  </div>
+</section>
 
-    <div class="staff">
-      <div class="staff-img"><img src="jin.jpg" alt="宮本仁"></div>
-      <div class="staff-name">宮本 仁</div>
-      <p>院内施術と訪問施術を担当しています。</p>
-      <p>ご利用者様やご家族様との信頼関係を大切にし、安心して施術を受けていただけるよう心がけています。</p>
-    </div>
+<section>
+  <h2>スタッフ紹介</h2>
+  <div class="staff">
+    <div class="staff-img"><img src="jin.jpg" alt="宮本仁"></div>
+    <div class="staff-name">宮本 仁</div>
+    <p>院内施術と訪問施術を担当しています。</p>
+    <p>ご利用者様やご家族様との信頼関係を大切にし、安心して施術を受けていただけるよう心がけています。</p>
+  </div>
 
-    <div class="staff">
-      <div class="staff-img"><img src="yuka.jpg" alt="宮本柚香"></div>
-      <div class="staff-name">宮本 柚香</div>
-      <p>ご利用者様一人ひとりに寄り添い、その方らしい生活を支えられる施術を目指しています。</p>
-      <p>ケアマネジャー様やご家族様との連携を大切にし、報告・連絡・相談を気をつけています。</p>
-    </div>
-  </section>
+  <div class="staff">
+    <div class="staff-img"><img src="yuka.jpg" alt="宮本柚香"></div>
+    <div class="staff-name">宮本 柚香</div>
+    <p>ご利用者様一人ひとりに寄り添い、その方らしい生活を支えられる施術を目指しています。</p>
+    <p>ケアマネジャー様やご家族様との連携を大切にし、報告・連絡・相談を気をつけています。</p>
+  </div>
+</section>
 
-  <section class="contact">
-    <h2>まずはお気軽に<br>ご相談ください</h2>
-    <p>対象エリアかわからない方も<br>お気軽にご相談ください。</p>
+<section>
+  <div class="box faq">
+    <h2>よくある質問</h2>
+    <p><strong>Q. 本当に保険が使えますか？</strong><br>A. 医師の同意書があれば利用できます。</p>
+    <p><strong>Q. 施設でも受けられますか？</strong><br>A. はい、施設への訪問も対応しています。</p>
+    <p><strong>Q. 鍼は痛いですか？</strong><br>A. お身体の状態に合わせて施術しますのでご安心ください。</p>
+  </div>
+</section>
 
-    <div class="btns">
-      <a class="btn line" href="https://lin.ee/zH2nhoz">LINEで相談する<span class="small">lin.ee/zH2nhoz</span></a>
-      <a class="btn tel" href="tel:09033920161">お電話で相談する<span class="small">090-3392-0161</span></a>
-    </div>
+<section class="contact">
+  <h2>まずはお気軽に<br>ご相談ください</h2>
+  <p>対象エリアかわからない方も<br>お気軽にご相談ください。</p>
 
-    <a class="map-link" href="https://maps.app.goo.gl/z5pV5YYio2WcivVRA?g_st=ic">Googleマップで見る</a>
+  <div class="btns">
+    <a class="btn line" href="https://lin.ee/zH2nhoz">LINEで相談する<span class="small">lin.ee/zH2nhoz</span></a>
+    <a class="btn tel" href="tel:09033920161">お電話で相談する<span class="small">090-3392-0161</span></a>
+  </div>
 
-    <div class="info">
-      <strong>もと鍼灸院</strong><br>
-      訪問鍼灸マッサージ<br><br>
-      <strong>住所</strong><br>
-      〒550-0004<br>
-      大阪府大阪市西区靱本町1丁目14-11 RE014
-    </div>
-  </section>
+  <a class="map-link" href="https://maps.app.goo.gl/z5pV5YYio2WcivVRA?g_st=ic">Googleマップで見る</a>
 
-  <footer>もと鍼灸院　訪問鍼灸マッサージ</footer>
+  <div class="info">
+    <strong>もと鍼灸院</strong><br>
+    訪問鍼灸マッサージ<br><br>
+    <strong>住所</strong><br>
+    〒550-0004<br>
+    大阪府大阪市西区靱本町1丁目14-11 RE014
+  </div>
+</section>
+
+<footer>もと鍼灸院　訪問鍼灸マッサージ</footer>
 
 </main>
 </body>
